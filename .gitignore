@@ -1,0 +1,8 @@
+.idea/
+upgrade/*
+themes/*
+!themes/newtheme
+languages/*
+uploads/*
+plugins/*
+!plugins/taskbook
