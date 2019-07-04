@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Recipe
  * Description: A simple Wordpress plugin that allows to create recipes and rate those recipes
- * Version: 1.0
+ * Version: 1.1
  * Author: Michael
  * Author URI: http://
  * Text Domain: recipe
