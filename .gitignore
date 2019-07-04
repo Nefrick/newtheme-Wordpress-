@@ -6,3 +6,4 @@ languages/*
 uploads/*
 plugins/*
 !plugins/taskbook
+!plugins/recipe
