@@ -1,3 +1,7 @@
 .card-body p img {
     width: 100% !important;
 }
+
+body, nav.navbar  {
+    padding-top: 73px;
+}

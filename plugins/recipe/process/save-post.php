@@ -15,7 +15,7 @@ function r_save_post_admin($post_id, $post, $update ){
     $recipe_data['level']           =   sanitize_text_field( $_POST['r_inputLevel'] );
     $recipe_data['meal_type']       =   sanitize_text_field( $_POST['r_inputMealType'] );
     $recipe_data['rating']          =  $recipe_data_get['rating'] > 0 ? $recipe_data_get['rating'] : 0;
-    $recipe_data['rating_count']    =  $recipe_data_get['rating_count'] > 0 ? $recipe_data_get['rating_count'] : 0;;
+    $recipe_data['rating_count']    =  $recipe_data_get['rating_count'] > 0 ? $recipe_data_get['rating_count'] : 0;
 
 
 
