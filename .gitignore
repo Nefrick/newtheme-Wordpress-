@@ -7,3 +7,4 @@ uploads/*
 plugins/*
 !plugins/taskbook
 !plugins/recipe
+debug.log

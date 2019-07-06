@@ -30,7 +30,7 @@ include( dirname(RECIPE_PLUGIN_URL).'/includes/widgets/daily-recipe.php' );
 include( 'includes/cron.php' );
 include( 'includes/shortcodes/creator.php' );
 include( 'process/submit-user-recipe.php' );
-
+include( 'acf/acf-filter.php');
 
 // Hooks
 register_activation_hook(__FILE__, 'r_activate_plugin' );
