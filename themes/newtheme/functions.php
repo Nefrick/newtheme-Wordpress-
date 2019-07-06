@@ -16,6 +16,7 @@ include( get_template_directory() . '/includes/admin/menus.php');
 include( get_template_directory() . '/includes/admin/options-page.php');
 include( get_template_directory() . '/includes/admin/init.php');
 include( get_template_directory() . '/process/save-options.php');
+include( get_template_directory() . '/includes/shortcodes/facebook.php');
 
 
 // Action & Filter Hooks
@@ -26,6 +27,6 @@ add_action( 'after_switch_theme', 'sj_activate' );
 add_action( 'admin_menu', 'sj_admin_menus' );
 add_action( 'admin_init', 'sj_admin_init' );
 
-
-
 // Shortcodes
+add_shortcode( 'ufb', 'sj_facebook_shortcode' );
+add_shortcode( 'ui', 'sj_icon_shortcode' );
