@@ -21,6 +21,7 @@ include( get_template_directory() . '/includes/shortcodes/facebook.php');
 include( get_template_directory() . '/includes/theme-customizer.php');
 include( get_template_directory() . '/includes/front/head.php');
 
+
 // Action & Filter Hooks
 add_action( 'wp_enqueue_scripts', 'sj_enqueue' );
 add_action( 'after_setup_theme', 'sj_setup_theme' );
@@ -30,6 +31,7 @@ add_action( 'admin_menu', 'sj_admin_menus' );
 add_action( 'admin_init', 'sj_admin_init' );
 add_action( 'customize_register', 'sj_customize_register' );
 add_action( 'wp_head', 'sj_head' );
+
 // Shortcodes
 add_shortcode( 'ufb', 'sj_facebook_shortcode' );
 add_shortcode( 'ui', 'sj_icon_shortcode' );
