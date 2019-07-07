@@ -23,8 +23,6 @@ function sj_enqueue() {
     wp_register_script('sj_swipebox', get_template_directory_uri() . '/assets/vendor/swipebox/swipebox.min.js', array(), false, true );
     wp_register_script('sj_app', get_template_directory_uri() . '/assets/scripts/app.js', array(), false, true );
 
-
-
     wp_enqueue_script('jquery');
     wp_enqueue_script('sj_fastclick');
     wp_enqueue_script('sj_modernizr');

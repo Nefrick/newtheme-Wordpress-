@@ -16,7 +16,9 @@ $theme_opts         =    get_option('sj_opts');
     <?php wp_head(); ?>
 
 </head>
-
+<div class="ads-box-new">
+    <?php echo get_theme_mod('sj_code_ads'); ?>
+</div>
 <body>
 
 <!-- Navigation -->

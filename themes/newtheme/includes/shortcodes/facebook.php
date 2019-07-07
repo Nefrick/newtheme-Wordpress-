@@ -1,5 +1,7 @@
 <?php
 
+// [ufb]<strong>[ui icon="twitter"]Like me on Facebook</strong>[/ufb]
+
 function sj_facebook_shortcode( $atts, $content = 'Like us on Facebook' ){
     $sj_theme_opts      =   get_option('sj_opts');
     $atts               =   shortcode_atts( array(
