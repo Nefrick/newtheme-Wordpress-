@@ -32,6 +32,7 @@ include( 'includes/shortcodes/creator.php' );
 include( 'process/submit-user-recipe.php' );
 include( 'acf/acf-filter.php');
 include( 'includes/admin/dashboard-widgets.php');
+include( 'includes/textdomain.php');
 
 // Hooks
 register_activation_hook(__FILE__, 'r_activate_plugin' );
@@ -48,6 +49,7 @@ add_action( 'r_daily_recipe_hook', 'r_generate_daily_recipe' );
 add_action( 'wp_ajax_r_submit_user_recipe', 'r_submit_user_recipe' );
 add_action( 'wp_ajax_nopriv_r_submit_user_recipe', 'r_submit_user_recipe' );
 add_action( 'wp_dashboard_setup', 'sj_add_dashboard_widgets' );
+add_action( 'plugins_loaded', 'sj_load_textdomain' );
 
 // Shortcodes
 add_shortcode( 'recipe_creator', 'r_recipe_creator_shortcode' );
