@@ -9,4 +9,5 @@ plugins/*
 !plugins/recipe
 !plugins/email-recipe.php
 !plugins/hello.php
+!plugins/mouse-based-parallax
 debug.log
