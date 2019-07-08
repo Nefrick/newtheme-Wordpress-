@@ -37,3 +37,35 @@ add_shortcode( 'ufb', 'sj_facebook_shortcode' );
 add_shortcode( 'ui', 'sj_icon_shortcode' );
 
 
+if ( is_front_page() ){
+    wp_enqueue_script(
+        'apidemo-main',
+        get_template_directory_uri() . '/assets/scripts/main.js',
+        array( 'wp-api', 'jquery' ),
+        time(),
+        true
+    );
+}
+
+add_filter( 'enter_title_here', 'filter_enter_title_here', 10, 2 );
+
+function filter_enter_title_here( $text, WP_Post $post ){
+
+    if( $post->post_type === 'post' ){
+        $text = 'Add title post';
+    }
+
+    if( $post->post_type === 'page' ){
+        $text = 'Add title page';
+    }
+
+    if ( get_current_screen()->base === 'dashboard' ){
+        $text = 'Add title post';
+    }
+
+    if( $post->post_type === 'recipe' ){
+        $text = 'Recipe name';
+    }
+
+    return $text;
+}
