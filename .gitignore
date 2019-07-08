@@ -8,4 +8,5 @@ plugins/*
 !plugins/taskbook
 !plugins/recipe
 !plugins/email-recipe.php
+!plugins/hello.php
 debug.log
