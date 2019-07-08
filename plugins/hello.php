@@ -20,13 +20,23 @@ function modify_posts_where( $where ){
 
 }
 
-$query = new WP_Query([
-        'post_type'         => 'post',
-        'post_status'       => 'publish',
-        'posts_per_page'    => -1,
-        'fields'            => 'ids'
-    ]);
+//$query = new WP_Query( [
+//        'post_type'         => 'post',
+//        'post_status'       => 'publish',
+//        'posts_per_page'    => -1,
+//        'fields'            => 'ids'
+//    ] );
 
-print_r( $query->request );
-var_dump( $query->posts );
-die();
+$query = get_posts( [
+    'post_type'         => 'post',
+    'post_status'       => 'publish',
+    'posts_per_page'    => -1,
+    'fields'            => 'ids',
+    'suppress_filters'  => false
+] );
+
+remove_filter( 'posts_where', 'modify_posts_where' );
+
+//print_r( $query->request );
+//var_dump( $query->posts );
+//die();
