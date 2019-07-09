@@ -25,7 +25,7 @@ class TutsPlus_Post_Notice
           'tutsplus-post-notice-admin',
           plugins_url( 'tutsplus-post-notice/assets/css/admin.css' ),
           array(),
-          '0.2.0'
+          '1.0.0'
         );
     }
 
@@ -39,7 +39,7 @@ class TutsPlus_Post_Notice
             'tutsplus-post-notice-admin',
             plugins_url( 'tutsplus-post-notice/assets/js/admin.js' ),
             array('jquery'),
-            '0.2.0'
+            '1.0.0'
         );
     }
 
