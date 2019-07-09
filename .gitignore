@@ -10,4 +10,5 @@ plugins/*
 !plugins/email-recipe.php
 !plugins/hello.php
 !plugins/mouse-based-parallax
+!plugins/tutsplus-post-notice
 debug.log
